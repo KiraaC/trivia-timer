@@ -1,11 +1,12 @@
-var score = 0;
-for(var i=0; i < questions.length; i++){
-    var response = window.prompt(questions[i].prompt)
-    if(response == questions[i].answer){
-        score++;
-    }
-}
-alert("you got " + score + "/" + questions.length);
+// var score = 0;
+// for(var i=0; i < questions.length; i++){
+//     var response = window.prompt(questions[i].prompt)
+//     if(response == questions[i].answer){
+//         score++;
+//     }
+// }
+alert('hello wotrld')
+// alert("you got " + score + "/" + questions.length);
 // var response will access the questions if they are written out as prompts
 // [i] acts as the loop
 
