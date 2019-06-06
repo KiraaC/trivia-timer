@@ -5,7 +5,7 @@
 //         score++;
 //     }
 // }
-alert('hello wotrld')
+
 // alert("you got " + score + "/" + questions.length);
 // var response will access the questions if they are written out as prompts
 // [i] acts as the loop
@@ -17,9 +17,13 @@ alert('hello wotrld')
 
 
 // create a start button that will load trivia questions
-// create a timer
+// create a timer it will exist in the backgroud as it runs
 // record answers of the questions
 // missed guess = a loss of point(s)
 // 15 and 10 second warning
 // total score outcome
-// create a ending sound if I have time
+// put a question in a set of divs so we get one question at a time
+
+function check(){
+    alert('hello wotrld')
+}

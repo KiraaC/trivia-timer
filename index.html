@@ -13,21 +13,36 @@
     <h4>Test your knowledge of tv trivia. Answer a question before the time runs out.</h4>
 
     <div class="stopwatch">
-        <p>Which popular kids tv show features a character living in a pineapple under the sea?</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Blues Clues</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Sponge Bob Square pants</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Paw Patrol</label>
-        </div>
 
-        <p>Pick a character on Game of Thrones</p>
+        <form id="quiz" name="quiz">
+
+            <p>Which popular kids tv show features a character living in a pineapple under the sea?</p>
+            <input type="radio" id="choices" name="question1" value=""> Blues Clues<br>
+            <input type="radio" id="choices" name="question1" value=""> Sponge Bob Square pants<br>
+            <input type="radio" id="choices" name="question1" value=""> Paw Patrol<br>
+
+            <p>What city does Stranger Things take place?</p>
+            <input type="radio" id="choices" name="question2" value=""> Hawkins<br>
+            <input type="radio" id="choices" name="question2" value=""> Sedona<br>
+            <input type="radio" id="choices" name="question2" value=""> Jersey<br>
+
+            <p> Which famous animal on tv also has their own theme park in Los Angeles?</p>
+            <input type="radio" id="choices" name="question3" value=""> Duck<br>
+            <input type="radio" id="choices" name="question3" value=""> Dog<br>
+            <input type="radio" id="choices" name="question3" value=""> Mouse<br>
+
+
+            <input id="button" type="button" value="I'm finished" onclick="check();">
+
+        </form>
+
+<div id = "completed_questions">
+    <span id = "number_correct">You have finished the quiz!!</span>
+</div>
+
+
+    </div>
+    <!-- <p>Pick a character on Game of Thrones</p>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">Ned Flanders </label>
@@ -48,68 +63,19 @@
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Zero </label>
+            <label class="form-check-label" for="inlineRadio2">Balto </label>
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
             <label class="form-check-label" for="inlineRadio3">Lassie</label>
         </div>
 
-        <p>What city does Stranger Things take place?</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Hawkins</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Sedona</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Springfield</label>
-        </div>
+        
 
-        <p> Which famous animal on tv also has their own theme park in Los Angeles?</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Duck</label>
+        
+        
         </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Dog</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Mouse</label>
-        </div>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1"></label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2"></label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3"></label>
-        </div>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1"></label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2"></label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3"></label>
-        </div>
-    </div>
-    <script src="./assets/js/timer.js"></script>
+    </div> -->
 </body>
 
 </html>
