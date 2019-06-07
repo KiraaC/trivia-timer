@@ -14,16 +14,37 @@
 // {
 // },
 // ]
+  // alert('hello world')
 
+//   checking answers 
+function check() {
+    const question1 = document.quiz.question1.value;
+    const question2 = document.quiz.question2.value;
+    const question3 = document.quiz.question3.value;
+    const question4 = document.quiz.question4.value;
+    const question5 = document.quiz.question5.value;
+    const question6 = document.quiz.question6.value;
+    var correct = 0;
 
-// create a start button that will load trivia questions
-// create a timer it will exist in the backgroud as it runs
-// record answers of the questions
-// missed guess = a loss of point(s)
-// 15 and 10 second warning
-// total score outcome
-// put a question in a set of divs so we get one question at a time
-
-function check(){
-    alert('hello wotrld')
+    if (question1 === "Sponge Bob Square Pants") {
+        correct = correct + 1
+    }
+    if (question2 === "Hawkins") {
+        correct = correct + 1
+    }
+    if (question3 === "Mouse") {
+        correct = correct + 1
+    }
+    if (question4 === "Arya Stark") {
+        correct = correct + 1
+    }
+    if (question5 === "Balto") {
+        correct = correct + 1
+    }
+    if (question6 === "Carebears") {
+        correct = correct + 1
+    }
+   
+  document.getElementById("completed_questions").style.visibility = "visible";
+  document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
 }

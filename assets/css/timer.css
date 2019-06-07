@@ -1,0 +1,7 @@
+body {
+    font-family: 'Acme', sans-serif;
+}
+#completed_questions {
+    visibility: hidden;
+}
+    

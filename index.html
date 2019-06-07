@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <title>Time Out Trivia Game</title>
 </head>
 
@@ -18,7 +28,7 @@
 
             <p>Which popular kids tv show features a character living in a pineapple under the sea?</p>
             <input type="radio" id="choices" name="question1" value=""> Blues Clues<br>
-            <input type="radio" id="choices" name="question1" value=""> Sponge Bob Square pants<br>
+            <input type="radio" id="choices" name="question1" value=""> Sponge Bob Square Pants<br>
             <input type="radio" id="choices" name="question1" value=""> Paw Patrol<br>
 
             <p>What city does Stranger Things take place?</p>
@@ -47,50 +57,17 @@
             <input type="radio" id="choices" name="question6" value=""> Carebears<br>
 
             <!-- <a href="#" class="btn btn-info" role="button">Next</a> -->
-            <input id="button" type="button" value="I'm finished" onclick="check();">
+            <input id="button" type="button" value="Complete" onclick="check();">
 
         </form>
 
-<div id = "completed_questions">
-    <span id = "number_correct">You have finished the quiz!!</span>
-</div>
+        <div id="completed_questions">
+            <span id="number_correct">You have finished the quiz!!</span>
+        </div>
 
 
     </div>
-    <!-- <p>Pick a character on Game of Thrones</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Ned Flanders </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Arya Stark </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Papa Pete</label>
-        </div>
-
-        <p>What was the name of the dog that saved Timmy from the well.</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Lady</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Balto </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">Lassie</label>
-        </div>
-
-        
-
-        
-        
-        </div>
-    </div> -->
+    
 </body>
 
 </html>
