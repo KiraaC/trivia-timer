@@ -4,4 +4,13 @@ body {
 #completed_questions {
     visibility: hidden;
 }
-    
+#container {
+	font-size:36px;
+	width: 700px;
+	margin: 10px auto;
+	padding: 30px;
+	background-color: #000000;
+	color: #ff6600;
+	border: 5px solid #CF29A6;
+	border-radius: 10px;
+}

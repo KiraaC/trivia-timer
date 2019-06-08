@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="assets/css/timer.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -22,52 +23,58 @@
     <h1>Time Out Trivia Game</h1>
     <h4>Test your knowledge of tv trivia. Answer a question before the time runs out.</h4>
 
-    <div class="stopwatch">
+    <!-- <div class="stopwatch"> -->
+    <div class="container">
+
 
         <form id="quiz" name="quiz">
 
             <p>Which popular kids tv show features a character living in a pineapple under the sea?</p>
-            <input type="radio" id="choices" name="question1" value=""> Blues Clues<br>
-            <input type="radio" id="choices" name="question1" value=""> Sponge Bob Square Pants<br>
-            <input type="radio" id="choices" name="question1" value=""> Paw Patrol<br>
+            <input type="radio" id="choices" name="question1" value="Blues Clues"> Blues Clues<br>
+            <input type="radio" id="choices" name="question1" value="Sponge Bob Square Pants"> Sponge Bob Square Pants<br>
+            <input type="radio" id="choices" name="question1" value="Paw Patrol"> Paw Patrol<br>
 
             <p>What city does Stranger Things take place?</p>
-            <input type="radio" id="choices" name="question2" value=""> Hawkins<br>
-            <input type="radio" id="choices" name="question2" value=""> Sedona<br>
-            <input type="radio" id="choices" name="question2" value=""> Jersey<br>
+            <input type="radio" id="choices" name="question2" value="Hawkins"> Hawkins<br>
+            <input type="radio" id="choices" name="question2" value="Sedona"> Sedona<br>
+            <input type="radio" id="choices" name="question2" value="Jersey"> Jersey<br>
 
             <p> Which famous animal on tv also has their own theme park in Los Angeles?</p>
-            <input type="radio" id="choices" name="question3" value=""> Duck<br>
-            <input type="radio" id="choices" name="question3" value=""> Dog<br>
-            <input type="radio" id="choices" name="question3" value=""> Mouse<br>
+            <input type="radio" id="choices" name="question3" value="Duck"> Duck<br>
+            <input type="radio" id="choices" name="question3" value="Dog"> Dog<br>
+            <input type="radio" id="choices" name="question3" value="Mouse"> Mouse<br>
 
             <p>Pick a character on Game of Thrones</p>
-            <input type="radio" id="choices" name="question4" value=""> Ned Flanders<br>
-            <input type="radio" id="choices" name="question4" value=""> Arya Stark <br>
-            <input type="radio" id="choices" name="question4" value=""> Papa Pete<br>
+            <input type="radio" id="choices" name="question4" value="Ned Flanders"> Ned Flanders<br>
+            <input type="radio" id="choices" name="question4" value="Arya Stark"> Arya Stark <br>
+            <input type="radio" id="choices" name="question4" value="Papa Pete"> Papa Pete<br>
 
             <p>What was the name of the dog that saved a town of children from influenza.</p>
-            <input type="radio" id="choices" name="question5" value=""> Lady<br>
-            <input type="radio" id="choices" name="question5" value=""> Balto<br>
-            <input type="radio" id="choices" name="question5" value=""> Lassie<br>
+            <input type="radio" id="choices" name="question5" value="Lady"> Lady<br>
+            <input type="radio" id="choices" name="question5" value="Balto"> Balto<br>
+            <input type="radio" id="choices" name="question5" value="Lassie"> Lassie<br>
 
             <p>Which 80's cartoon had creatures shoot colorful feelings out of their tummy.</p>
-            <input type="radio" id="choices" name="question6" value=""> Gummy Bears<br>
-            <input type="radio" id="choices" name="question6" value=""> Trolls<br>
-            <input type="radio" id="choices" name="question6" value=""> Carebears<br>
+            <input type="radio" id="choices" name="question6" value="Gummy Bears"> Gummy Bears<br>
+            <input type="radio" id="choices" name="question6" value="Trolls"> Trolls<br>
+            <input type="radio" id="choices" name="question6" value="Carebears"> Carebears<br>
 
             <!-- <a href="#" class="btn btn-info" role="button">Next</a> -->
-            <input id="button" type="button" value="Complete" onclick="check();">
+            <input id="button" type="button" value="Complete" onclick= "check();">
 
         </form>
-
-        <div id="completed_questions">
-            <span id="number_correct">You have finished the quiz!!</span>
-        </div>
-
-
     </div>
     
+    <div id="after_submit">
+        <span id="number_correct">You have finished the quiz!!</span>
+        <span id="message"></span>
+
+        
+    </div>
+
+
+    <!-- </div> -->
+
 </body>
 
 </html>
