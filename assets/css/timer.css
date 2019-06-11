@@ -1,17 +1,15 @@
 body {
-	font-family: 'Acme', sans-serif;
-	color: #CF29A6
+	font-family: 'Fresca', sans-serif;
 }
-#completed_questions {
-    visibility: hidden;
-}
+
 .container {
-	font-size:36px;
-	width: 700px;
+	font-size:18px;
 	margin: 10px auto;
+	position: center;
+	text-align: center;
 	padding: 30px;
 	background-color: #000000;
 	color: #ff6600;
-	border: 5px solid #CF29A6;
+	border: 7px solid #ff6600;
 	border-radius: 10px;
 }
